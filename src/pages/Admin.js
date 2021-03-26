@@ -81,12 +81,12 @@ export default class Admin extends Component {
           </Col>
         </Row>
         <Row>
-          <Col sm={{size: 4, offset: 4}}>
+          <Col>
             <Card>
               <CardBody>
                 <div>
                   <Form>
-                    <Row className="mt-2 mb-2 melissaCard">
+                    <Row className="mt-2 mb-2">
                       <Col>
                         <Label className="Label">Enter your username and we will send you a reset link.</Label>
                         <Input type="text"

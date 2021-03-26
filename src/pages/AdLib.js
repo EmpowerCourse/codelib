@@ -81,7 +81,7 @@ export default class AdLib extends Component {
           </Col>
         </Row>
         <Row>
-          <Col sm={{size: 4, offset: 4}}>
+          <Col>
             <Card>
               <CardBody>
                 <div>
