@@ -9,6 +9,11 @@ export default class Home extends Component {
     };
   }
 
+  // Component is now "active"
+  componentDidMount() {
+    console.log("Home"); 
+  }
+
   render() {
     return (
       <header className="App-header">

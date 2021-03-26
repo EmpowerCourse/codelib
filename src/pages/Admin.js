@@ -24,6 +24,48 @@ export default class Admin extends Component {
     this.handleFlatStateChange = this.handleFlatStateChange.bind(this);
   }
 
+  // TO DO LIST:
+  // 1. React Life Cycles __> did upate and will unmount ----
+  // 2. Local Storage
+  // 3. Object manipulation
+  // 4. Array manipulation
+
+  //     "key": value
+  // const sampleObject = {
+  //   "fruitName": "banana",
+  //   fruitName: "banana"
+  // }
+
+  // const sampleArray = [];
+
+  // Component is now "active"
+  componentDidMount() {
+    let orange = {
+      smell: "sweetiness",
+      shape: "round"
+    };
+    console.log("first", orange.shape);
+    console.log("first change", orange["color"]);
+    orange.color = "orange";
+    let bloodOrange = Object.assign({}, orange);
+    bloodOrange.color = "red";
+    console.log("second change", orange["color"]);
+    const gerry = ["pear", "apple" , "cucumber", orange];
+    // console.log('length 2', ["pear", "apple" , "cucumber", orange].length)
+    // console.log("admin", gerry); 
+  
+  }
+
+ 
+
+  // Component has props/state that changed
+  componentDidUpdate() {
+
+  }
+  // Component has "deactivated"
+  componentWillUnmount() {
+
+  }
   // onChange(event, overrideName = 40) {
   //   const eventAction = event;
   //   let newName = eventAction.target.value;
